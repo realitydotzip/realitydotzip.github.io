@@ -1,4 +1,4 @@
-/* reality.zip - Optimized Stylesheet */
+/* reality.zip - Unified Stylesheet with Consistent Spacing */
 
 /* Base Styles */
 * {
@@ -89,18 +89,22 @@ td {
   text-align: left;
 }
 
-/* Media Content */
+/* Media Content - FIXED SPACING */
+img, .player-container, .content, .tracklist, .transcript {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
 img {
   width: 90%;
   max-width: 600px;
   height: auto;
-  margin: 3vh auto;
   display: block;
 }
 
 .audio-player {
   width: 100%;
-  margin: 15px 0;
+  margin: 0;
 }
 
 /* Lists */
@@ -111,6 +115,11 @@ img {
 
 .tracklist-items li {
   margin-bottom: 8px;
+}
+
+/* Transcript Styling */
+.transcript-content br {
+  line-height: inherit;
 }
 
 /* Responsive Adjustments */
