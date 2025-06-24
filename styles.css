@@ -1,4 +1,4 @@
-/* reality.zip - Unified Stylesheet */
+/* reality.zip - Optimized Stylesheet */
 
 /* Base Styles */
 * {
@@ -8,33 +8,24 @@
 body {
   margin: 0;
   padding: 5vh 0 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: system-ui, sans-serif;
   color: #333;
   font-size: 14px;
   text-align: center;
   line-height: 1.5;
-  background-color: #fff;
 }
 
-/* Typography */
+/* Typography & Common Elements */
 .title {
   font-size: 5vw;
   font-weight: 500;
   margin-bottom: 6vh;
 }
 
-.page-title {
-  font-size: 16px;
-  margin: 4vh 0 2vh;
-  font-weight: 500;
-  text-align: left;
-}
-
 p {
   margin: 0 0 1.5em;
 }
 
-/* Links */
 a {
   color: inherit;
   text-decoration: none;
@@ -42,63 +33,28 @@ a {
 }
 
 a:hover {
-  background: rgba(0, 0, 0, .02);
+  background: rgba(0,0,0,.02);
 }
 
-/* Layout Components */
-.container {
+/* Shared Container Styles */
+.meta, .content, .player-container, .tracklist, .transcript, table {
   width: 90%;
   max-width: 600px;
   margin: 0 auto;
-}
-
-/* Index Page Table */
-table {
-  border-collapse: collapse;
-  width: 90%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-tr {
-  border-bottom: 1px solid rgba(0, 0, 0, .05);
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-tr:last-child {
-  border-bottom: none;
-}
-
-tr:hover {
-  background: rgba(0, 0, 0, .02);
-}
-
-td {
-  padding: 10px 5px;
   text-align: left;
-}
-
-.link-cell {
-  width: 20%;
-}
-
-.date-cell {
-  width: 20%;
-}
-
-.desc-cell {
-  width: 60%;
 }
 
 /* Content Pages */
-.meta {
-  width: 90%;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 1px solid rgba(0, 0, 0, .05);
-  padding-bottom: 3vh;
+.page-title, .tracklist-title, .transcript-title {
+  font-size: 16px;
+  margin: 4vh 0 2vh;
+  font-weight: 500;
   text-align: left;
+}
+
+.meta {
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  padding-bottom: 3vh;
 }
 
 .meta-row {
@@ -110,10 +66,26 @@ td {
   width: 100px;
 }
 
-.content {
-  width: 90%;
-  max-width: 600px;
-  margin: 3vh auto;
+/* Index Page Table */
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  cursor: pointer;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+tr:hover {
+  background: rgba(0,0,0,.02);
+}
+
+td {
+  padding: 10px 5px;
   text-align: left;
 }
 
@@ -126,63 +98,19 @@ img {
   display: block;
 }
 
-/* Audio Player */
-.player-container {
-  width: 90%;
-  max-width: 600px;
-  margin: 3vh auto;
-}
-
 .audio-player {
   width: 100%;
   margin: 15px 0;
 }
 
-/* Tracklist */
-.tracklist {
-  width: 90%;
-  max-width: 600px;
-  margin: 3vh auto;
-  text-align: left;
-}
-
-.tracklist-title {
-  font-size: 16px;
-  margin: 4vh 0 2vh;
-  font-weight: 500;
-  text-align: left;
-}
-
+/* Lists */
 .tracklist-items {
-  margin: 0;
   padding-left: 20px;
+  margin: 0;
 }
 
 .tracklist-items li {
   margin-bottom: 8px;
-}
-
-/* Transcript */
-.transcript {
-  width: 90%;
-  max-width: 600px;
-  margin: 3vh auto;
-  text-align: left;
-}
-
-.transcript-title {
-  font-size: 16px;
-  margin: 4vh 0 2vh;
-  font-weight: 500;
-  text-align: left;
-}
-
-.transcript-content {
-  line-height: 1.5;
-}
-
-.transcript-content p {
-  margin-bottom: 15px;
 }
 
 /* Responsive Adjustments */
