@@ -40,7 +40,8 @@ a:hover {
 .meta, .content, .player-container, .tracklist, .transcript, table {
   width: 90%;
   max-width: 600px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
 }
 
@@ -95,11 +96,14 @@ img, .player-container, .content, .tracklist, .transcript {
   margin-bottom: 3vh;
 }
 
+/* Image specific styles - ensure centering */
 img {
   width: 90%;
   max-width: 600px;
   height: auto;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .audio-player {
