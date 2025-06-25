@@ -136,3 +136,28 @@ img {
     font-size: 16px;
   }
 }
+
+/* Feature Image Styles */
+.feature-image-container {
+  width: 100%;
+  margin: 3vh 0 0;
+}
+
+.feature-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  padding-bottom: 3vh;
+}
+
+/* Adjust the meta section styles */
+.meta {
+  border-bottom: none; /* Remove the bottom border from meta section */
+  padding-bottom: 0; /* Remove padding to accommodate feature image */
+}
+
+/* Content section - adjust margin if needed */
+.content {
+  margin-top: 3vh;
+}
