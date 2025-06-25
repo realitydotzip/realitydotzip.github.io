@@ -54,8 +54,8 @@ a:hover {
 }
 
 .meta {
-  border-bottom: none; /* Remove the bottom border from meta section */
-  padding-bottom: 0; /* Remove padding to accommodate feature image */
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .meta-row {
@@ -126,15 +126,17 @@ img {
   line-height: inherit;
 }
 
-/* Feature Image Styles - Fixed for mobile */
+/* Feature Image Styles - EDGE TO EDGE FIX */
 .feature-image-container {
-  width: 110%; /* Slightly wider than container to ensure full coverage */
-  margin: 3vh 0 0; /* Keep top margin */
-  margin-left: -5%; /* Negative margin to counteract container padding */
-  margin-right: -5%; /* Negative margin to counteract container padding */
-  position: relative; /* Establish positioning context */
-  left: 0; /* Ensure proper alignment */
-  overflow: hidden; /* Prevent any potential horizontal scrolling */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 3vh;
+  margin-bottom: 0;
+  overflow-x: hidden;
 }
 
 .feature-image {
@@ -143,6 +145,13 @@ img {
   height: auto;
   display: block;
   object-fit: cover;
+}
+
+/* Add border after the image */
+.border-bottom {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
   border-bottom: 1px solid rgba(0,0,0,.05);
   padding-bottom: 3vh;
 }
@@ -153,25 +162,6 @@ img {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 767px) {
-  /* Mobile-specific adjustments */
-  .feature-image-container {
-    width: 100vw; /* Use viewport width on mobile */
-    margin-left: calc(-50vw + 50%); /* Center align based on viewport */
-    margin-right: 0;
-    left: 0;
-  }
-  
-  .feature-image {
-    width: 100%;
-    border-bottom-width: 1px; /* Ensure border is visible */
-  }
-  
-  .title {
-    font-size: 28px; /* Slightly smaller title on mobile */
-  }
-}
-
 @media (min-width: 768px) {
   .title {
     font-size: 36px;
