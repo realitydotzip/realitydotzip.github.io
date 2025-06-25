@@ -126,6 +126,14 @@ img {
   line-height: inherit;
 }
 
+/* Wrapper to keep image and border together */
+.feature-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
 /* Feature Image Styles - EDGE TO EDGE FIX */
 .feature-image-container {
   width: 100vw;
@@ -137,6 +145,7 @@ img {
   margin-top: 3vh;
   margin-bottom: 0;
   overflow-x: hidden;
+  order: 1; /* Ensure image always comes first */
 }
 
 .feature-image {
@@ -154,6 +163,7 @@ img {
   margin: 0 auto;
   border-bottom: 1px solid rgba(0,0,0,.05);
   padding-bottom: 3vh;
+  order: 2; /* Ensure border always comes second */
 }
 
 /* Content section - adjust margin if needed */
