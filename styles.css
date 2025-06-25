@@ -8,6 +8,8 @@
 body {
   margin: 0;
   padding: 5vh 0 15vh;
+  min-height: 100vh; /* This ensures the body is at least the full viewport height */
+  padding-bottom: 50px; /* Fixed pixel value for bottom padding */
   font-family: system-ui, sans-serif;
   color: #333;
   font-size: 14px;
