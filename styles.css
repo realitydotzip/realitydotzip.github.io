@@ -178,5 +178,6 @@ img {
 @media (max-width: 767px) {
   .feature-image {
     max-height: 150px; /* Reduced height for mobile */
+    max-width: 600px
   }
 }
