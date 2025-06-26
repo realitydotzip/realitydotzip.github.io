@@ -128,7 +128,7 @@ img {
   line-height: inherit;
 }
 
-/* Feature Image Styles - NEW IMPLEMENTATION */
+/* Feature Image Styles - REFINED IMPLEMENTATION */
 .feature-image-container {
   width: 90%;
   max-width: 600px;
@@ -136,7 +136,7 @@ img {
   margin-right: auto;
   margin-top: 3vh;
   margin-bottom: 0;
-  height: 200px; /* Fixed height for desktop */
+  height: 140px; /* Adjusted desktop height to match screenshot */
   overflow: hidden;
   position: relative;
 }
@@ -146,8 +146,8 @@ img {
   height: 100%;
   display: block;
   object-fit: cover;
-  /* Center on the horizon line for consistent appearance */
-  object-position: center 38%;
+  /* Focused on horizon line for consistent appearance */
+  object-position: center 42%;
 }
 
 /* Add border after the image */
@@ -178,11 +178,11 @@ img {
 /* Mobile-specific adjustments for feature image */
 @media (max-width: 767px) {
   .feature-image-container {
-    height: 230px; /* Slightly taller on mobile */
+    height: 180px; /* Adjusted mobile height */
   }
   
   .feature-image {
-    /* Adjust object-position slightly for mobile to ensure consistent appearance */
-    object-position: center 40%;
+    /* Refined object-position for mobile to match desktop appearance */
+    object-position: center 43%;
   }
 }
