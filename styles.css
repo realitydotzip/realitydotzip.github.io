@@ -1,4 +1,20 @@
-/* reality.zip - Unified Stylesheet with Consistent Spacing */
+/* Feature Image Styles - SIMPLE RESPONSIVE APPROACH */
+.feature-image-container {
+  width: 90%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vh;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.feature-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}/* reality.zip - Unified Stylesheet with Consistent Spacing */
 
 /* Base Styles */
 * {
@@ -128,28 +144,6 @@ img {
   line-height: inherit;
 }
 
-/* Feature Image Styles - REFINED IMPLEMENTATION */
-.feature-image-container {
-  width: 90%;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3vh;
-  margin-bottom: 0;
-  height: 140px; /* Adjusted desktop height to match screenshot */
-  overflow: hidden;
-  position: relative;
-}
-
-.feature-image {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  /* Focused on horizon line for consistent appearance */
-  object-position: center 42%;
-}
-
 /* Add border after the image */
 .border-bottom {
   width: 90%;
@@ -172,17 +166,5 @@ img {
   
   body {
     font-size: 16px;
-  }
-}
-
-/* Mobile-specific adjustments for feature image */
-@media (max-width: 767px) {
-  .feature-image-container {
-    height: 180px; /* Adjusted mobile height */
-  }
-  
-  .feature-image {
-    /* Refined object-position for mobile to match desktop appearance */
-    object-position: center 43%;
   }
 }
