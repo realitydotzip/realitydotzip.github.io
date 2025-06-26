@@ -136,15 +136,18 @@ img {
   margin-right: auto;
   margin-top: 3vh;
   margin-bottom: 0;
-  height: 200px; /* Fixed height across all devices */
+  height: 200px; /* Fixed height for desktop */
   overflow: hidden;
+  position: relative;
 }
 
 .feature-image {
   width: 100%;
-  height: 200px; /* Fixed height to match container */
+  height: 100%;
   display: block;
   object-fit: cover;
+  /* Center on the horizon line for consistent appearance */
+  object-position: center 38%;
 }
 
 /* Add border after the image */
@@ -175,10 +178,11 @@ img {
 /* Mobile-specific adjustments for feature image */
 @media (max-width: 767px) {
   .feature-image-container {
-    height: 225px; /* Slightly taller on mobile */
+    height: 230px; /* Slightly taller on mobile */
   }
   
   .feature-image {
-    height: 225px; /* Matching container height */
+    /* Adjust object-position slightly for mobile to ensure consistent appearance */
+    object-position: center 40%;
   }
 }
