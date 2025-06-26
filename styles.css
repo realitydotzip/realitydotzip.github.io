@@ -83,6 +83,7 @@ a:hover {
 
 .meta-label {
   width: 100px;
+  min-width: 100px; /* Ensures the label doesn't shrink */
 }
 
 /* Index Page Table */
@@ -165,6 +166,20 @@ img {
   
   body {
     font-size: 16px;
+  }
+}
+
+/* Mobile Meta Adjustments */
+@media (max-width: 480px) {
+  .meta-row {
+    flex-direction: column; /* Stack labels and values on mobile */
+    margin-bottom: 2vh; /* Add more space between stacked rows */
+  }
+  
+  .meta-label {
+    width: auto; /* Allow label to take its natural width */
+    margin-bottom: 0.3vh; /* Add space between label and value */
+    font-weight: 500; /* Make labels slightly bolder on mobile for better readability */
   }
 }
 
