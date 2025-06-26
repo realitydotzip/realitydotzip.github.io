@@ -1,20 +1,4 @@
-/* Feature Image Styles - SIMPLE RESPONSIVE APPROACH */
-.feature-image-container {
-  width: 90%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding-bottom: 0;
-  overflow: hidden;
-}
-
-.feature-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  max-width: 100%;
-  max-height: 200px; /* Cap the height across all devices */
-  object-fit: cover; /* Ensures image fills the container while maintaining aspect ratio */
-}/* reality.zip - Unified Stylesheet with Consistent Spacing */
+/* reality.zip - Unified Stylesheet */
 
 /* Base Styles */
 * {
@@ -23,9 +7,8 @@
 
 body {
   margin: 0;
-  padding: 5vh 0 15vh;
-  min-height: 100vh; /* This ensures the body is at least the full viewport height */
-  padding-bottom: 50px; /* Fixed pixel value for bottom padding */
+  padding: 5vh 0 50px; /* Simplified padding */
+  min-height: 100vh;
   font-family: system-ui, sans-serif;
   color: #333;
   font-size: 14px;
@@ -54,8 +37,14 @@ a:hover {
   background: rgba(0,0,0,.02);
 }
 
-/* Shared Container Styles */
-.meta, .content, .player-container, .tracklist, .transcript, table {
+/* Common Container Styles */
+.meta, 
+.content, 
+.player-container, 
+.tracklist, 
+.transcript, 
+table,
+.border-bottom {
   width: 90%;
   max-width: 600px;
   margin-left: auto;
@@ -64,7 +53,9 @@ a:hover {
 }
 
 /* Content Pages */
-.page-title, .tracklist-title, .transcript-title {
+.page-title, 
+.tracklist-title, 
+.transcript-title {
   font-size: 16px;
   margin: 4vh 0 2vh;
   font-weight: 500;
@@ -79,17 +70,35 @@ a:hover {
 .meta-row {
   display: flex;
   margin-bottom: 1vh;
-  flex-wrap: nowrap; /* Prevent wrapping */
-  align-items: flex-start; /* Align items to the top */
+  flex-wrap: nowrap;
+  align-items: flex-start;
 }
 
 .meta-label {
   width: 100px;
-  min-width: 100px; /* Ensures the label doesn't shrink */
-  flex-shrink: 0; /* Prevent the label from shrinking */
+  min-width: 100px;
+  flex-shrink: 0;
 }
 
-/* Index Page Table */
+/* Feature Image Styles */
+.feature-image-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.feature-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Table Styles */
 table {
   border-collapse: collapse;
 }
@@ -112,13 +121,17 @@ td {
   text-align: left;
 }
 
-/* Media Content - FIXED SPACING */
-img, .player-container, .content, .tracklist, .transcript {
+/* Media Content - Consistent Spacing */
+img, 
+.player-container, 
+.content, 
+.tracklist, 
+.transcript {
   margin-top: 3vh;
   margin-bottom: 3vh;
 }
 
-/* Image specific styles - ensure centering */
+/* Image styles */
 img {
   width: 90%;
   max-width: 600px;
@@ -148,17 +161,16 @@ img {
   line-height: inherit;
 }
 
-/* Add border after the image */
+/* Border Element */
 .border-bottom {
-  width: 90%;
-  max-width: 600px;
-  margin: 0 auto;
   border-bottom: 1px solid rgba(0,0,0,.05);
 }
 
-/* Content section - adjust margin if needed */
-.content {
-  margin-top: 3vh;
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
 }
 
 /* Responsive Adjustments */
@@ -172,21 +184,13 @@ img {
   }
 }
 
-/* Mobile Meta Adjustments - Maintain horizontal layout */
 @media (max-width: 480px) {
   .meta-row {
-    margin-bottom: 1.5vh; /* Slightly more space between rows on mobile */
+    margin-bottom: 1.5vh;
   }
   
   .meta-label {
-    width: 80px; /* Slightly smaller width on mobile */
+    width: 80px;
     min-width: 80px;
   }
-}
-
-/* Footer Styles */
-.footer {
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 20px;
 }
