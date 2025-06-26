@@ -79,11 +79,14 @@ a:hover {
 .meta-row {
   display: flex;
   margin-bottom: 1vh;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  align-items: flex-start; /* Align items to the top */
 }
 
 .meta-label {
   width: 100px;
   min-width: 100px; /* Ensures the label doesn't shrink */
+  flex-shrink: 0; /* Prevent the label from shrinking */
 }
 
 /* Index Page Table */
@@ -169,17 +172,15 @@ img {
   }
 }
 
-/* Mobile Meta Adjustments */
+/* Mobile Meta Adjustments - Maintain horizontal layout */
 @media (max-width: 480px) {
   .meta-row {
-    flex-direction: column; /* Stack labels and values on mobile */
-    margin-bottom: 2vh; /* Add more space between stacked rows */
+    margin-bottom: 1.5vh; /* Slightly more space between rows on mobile */
   }
   
   .meta-label {
-    width: auto; /* Allow label to take its natural width */
-    margin-bottom: 0.3vh; /* Add space between label and value */
-    font-weight: 500; /* Make labels slightly bolder on mobile for better readability */
+    width: 80px; /* Slightly smaller width on mobile */
+    min-width: 80px;
   }
 }
 
