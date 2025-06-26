@@ -14,7 +14,7 @@
   height: auto;
   display: block;
   max-width: 100%;
-  max-height: 180px; /* Cap the height across all devices */
+  max-height: 200px; /* Cap the height across all devices */
   object-fit: cover; /* Ensures image fills the container while maintaining aspect ratio */
 }/* reality.zip - Unified Stylesheet with Consistent Spacing */
 
