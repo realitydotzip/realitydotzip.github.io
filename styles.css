@@ -172,4 +172,13 @@ img {
   }
 }
 
-/* No mobile-specific adjustments for feature image height to maintain consistency */
+/* Mobile-specific adjustments for feature image */
+@media (max-width: 767px) {
+  .feature-image-container {
+    height: 250px; /* Slightly taller on mobile */
+  }
+  
+  .feature-image {
+    height: 250px; /* Matching container height */
+  }
+}
