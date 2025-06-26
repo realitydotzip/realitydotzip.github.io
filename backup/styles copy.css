@@ -128,23 +128,25 @@ img {
   line-height: inherit;
 }
 
-/* Feature Image Styles - UPDATED FOR PERFECT RESPONSIVENESS */
+/* Feature Image Styles - EDGE TO EDGE FIX */
 .feature-image-container {
-  width: 90%;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   margin-top: 3vh;
   margin-bottom: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .feature-image {
   width: 100%;
+  max-height: 200px;
   height: auto;
   display: block;
   object-fit: cover;
-  max-height: 200px;
 }
 
 /* Add border after the image */
@@ -176,5 +178,6 @@ img {
 @media (max-width: 767px) {
   .feature-image {
     max-height: 150px; /* Reduced height for mobile */
+    max-width: 600px;
   }
 }
