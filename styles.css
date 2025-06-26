@@ -137,14 +137,19 @@ img {
   margin-top: 3vh;
   margin-bottom: 0;
   overflow: hidden;
+  /* Set a consistent aspect ratio container */
+  position: relative;
+  padding-bottom: 37.5%; /* 16:6 aspect ratio (approx 2.67:1) */
 }
 
 .feature-image {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
-  max-height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* Add border after the image */
@@ -172,9 +177,4 @@ img {
   }
 }
 
-/* Mobile-specific adjustments */
-@media (max-width: 767px) {
-  .feature-image {
-    max-height: 150px; /* Reduced height for mobile */
-  }
-}
+/* Mobile-specific adjustments - removed different max-height for consistency */
