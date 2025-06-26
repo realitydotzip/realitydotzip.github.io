@@ -139,7 +139,7 @@ img {
   overflow: hidden;
   /* Set a consistent aspect ratio container */
   position: relative;
-  padding-bottom: 37.5%; /* 16:6 aspect ratio (approx 2.67:1) */
+  padding-bottom: 28%; /* Matches desktop screenshot aspect ratio (approx 3.57:1) */
 }
 
 .feature-image {
